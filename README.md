@@ -1,5 +1,8 @@
 # Sistemas Operativos - TP0
 
+GRUPO: Sindicato del Software
+Fecha de realización: 28/03/2024
+
 ## ¿De qué trata?
 
 El TP0 es una práctica inicial para empezar a familiarizarse con algunas de las herramientas necesarias para el trabajo práctico cuatrimestral de la materia Sistemas Operativos.
