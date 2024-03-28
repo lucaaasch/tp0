@@ -1,7 +1,7 @@
 # Sistemas Operativos - TP0
 
 GRUPO: Sindicato del Software
-Fecha de realización: 28/03/2024
+- Fecha de Realización: 28/03/2024
 
 ## ¿De qué trata?
 
