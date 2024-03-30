@@ -1,11 +1,8 @@
 #include "client.h"
 
-
-
 int main(void)
 {
 	/*---------------------------------------------------PARTE 2-------------------------------------------------------------*/
-
 	int conexion;
 	char* ip;
 	char* puerto;
@@ -18,8 +15,6 @@ int main(void)
 
 	logger = iniciar_logger();
 	log_info(logger,"Soy un Log\n");
-	
-
 
 	/* ---------------- ARCHIVOS DE CONFIGURACION ---------------- */
 
@@ -34,15 +29,11 @@ int main(void)
 	leer_consola(logger);
 
 	/*---------------------------------------------------PARTE 3-------------------------------------------------------------*/
-
-	
 	conexion = crear_conexion(ip, puerto);
 	enviar_mensaje(valor,conexion);
-
 	
 	log_info(logger,"Las lineas que le pasaremos al server  son: ");
 	paquete(conexion,logger);
-
 	
 	terminar_programa(conexion, logger, config);
 
@@ -89,7 +80,6 @@ void leer_consola(t_log* logger)
 	free(leido);
 
 	// ¡No te olvides de liberar las lineas antes de regresar!
-
 }
 
 void paquete(int conexion,t_log *logger)
@@ -114,7 +104,6 @@ void paquete(int conexion,t_log *logger)
 	// ¡No te olvides de liberar las líneas y el paquete antes de regresar!
 	free(leido);
 	eliminar_paquete(paquete);
-	
 }
 
 void terminar_programa(int conexion, t_log* logger, t_config* config)
